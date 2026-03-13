@@ -3,11 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Cosmos</title>
-
     <link rel="stylesheet" href="./output.css" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -15,7 +12,7 @@
   </head>
 
   <body>
-    <!-- NAVBAR -->
+    <!-- header -->
     <header class="w-full border-b border-white/10 backdrop-blur-sm">
       <div class="container flex items-center justify-between py-6">
         <div class="flex font-space items-center gap-2">
@@ -28,17 +25,21 @@
           </h4>
         </div>
 
-        <nav class="hidden md:flex gap-10 text-text-secondary">
-          <a class="text-text-primary border-b border-starlight pb-1">Home</a>
-          <a>Missions</a>
-          <a>Spacecraft</a>
-          <a>Gallery</a>
-          <a>Contact</a>
+        <nav class="headerNav">
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./missions.html">Missions</a></li>
+            <li><a href="./spacecraft.html">Spacecraft</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
         </nav>
-
-        <button class="md:hidden">
-          <i class="fa-solid fa-bars"></i>
-        </button>
+        <div class="toggleMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="transparent"></div>
       </div>
     </header>
 
@@ -103,11 +104,13 @@
           >
             <div class="font-space"><h4>🚀 COSMOS</h4></div>
 
-            <div class="flex gap-8 text-text-secondary">
-              <a>Home</a>
-              <a>Missions</a>
-              <a>Spacecraft</a>
-              <a>Gallery</a>
+            <div>
+              <ul class="flex gap-8 text-text-secondary">
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./missions.html">Missions</a></li>
+                <li><a href="./spacecraft.html">Spacecraft</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+              </ul>
             </div>
 
             <div class="flex gap-4">
@@ -136,5 +139,6 @@
         </p>
       </div>
     </footer>
+    <script src="../js/toggle-menu.js"></script>
   </body>
 </html>
