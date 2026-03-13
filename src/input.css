@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url(/fonts/SpaceGrotesk-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url(/fonts/SpaceGrotesk-Medium.woff2) format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url(/fonts/SpaceGrotesk-SemiBold.woff2) format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url(/fonts/SpaceGrotesk-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(/fonts/Inter_18pt-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(/fonts/Inter_18pt-Medium.woff2) format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(/fonts/Inter_18pt-SemiBold.woff2) format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(/fonts/Inter_18pt-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-space: "Space Grotesk", sans-serif;
+  --color-deep-space: #0a0a0f;
+  --color-cosmic-blue: #1a1a2e;
+  --color-nebula-purple: #16213e;
+  --color-starlight: #e94560;
+  --color-accent-cyan: #0f3460;
+  --color-text-primary: #eaeaea;
+  --color-text-secondary: #a0a0a0;
+  --color-glow: rgba(233, 69, 96, 0.3);
+}
+@layer base {
+  html {
+    @apply scroll-smooth scroll-p-16;
+  }
+  body {
+    @apply overflow-x-hidden font-inter text-text-primary text-base bg-deep-space;
+  }
+  .container {
+    @apply max-w-7xl w-full mx-auto px-4;
+  }
+  h1 {
+    @apply text-[clamp(3rem,6vw,4rem)] font-bold;
+  }
+  h2 {
+    @apply text-[clamp(1.5rem,5vw,2.5rem)] font-bold;
+  }
+  h3 {
+    @apply text-[clamp(1.25rem,4vw,2rem)] font-bold;
+  }
+  h4 {
+    @apply text-[clamp(1rem,3vw,1.75rem)] font-bold;
+  }
+  h5 {
+    @apply text-[clamp(1.25rem,2vw,1.5rem)] font-semibold;
+  }
+  h6 {
+    @apply text-[clamp(1.125rem,1vw,1.35rem)] font-semibold;
+  }
+}
+
+@layer components {
+  .hero-section {
+    @apply relative overflow-hidden py-28 bg-[radial-gradient(circle_at_top,var(--color-cosmic-blue),var(--color-deep-space))];
+  }
+  .hero-badge {
+    @apply inline-flex items-center gap-2 border border-starlight/40 text-starlight px-5 py-2 rounded-full mb-6;
+  }
+  .btn-primary {
+    @apply bg-starlight px-8 py-3 rounded-full shadow-[0_0_30px_var(--color-glow)] hover:scale-105 transition;
+  }
+  .btn-outline {
+    @apply border border-white/20 px-8 py-3 rounded-full hover:border-white transition;
+  }
+  .stat-card {
+    @apply bg-[#111118] border border-white/5 rounded-xl p-10 text-center hover:border-starlight/30 transition;
+  }
+  .stat-card h3 {
+    @apply text-starlight;
+  }
+  .stat-card p {
+    @apply text-text-secondary mt-2;
+  }
+  .social-icon {
+    @apply w-10 h-10 flex items-center justify-center rounded-full border border-white/10 text-text-secondary hover:border-starlight transition;
+  }
+}
