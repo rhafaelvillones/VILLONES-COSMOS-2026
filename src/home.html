@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cosmos</title>
+    <link rel="icon" href="../images/favicon.ico" />
     <link rel="stylesheet" href="./output.css" />
     <link
       rel="stylesheet"
@@ -13,38 +14,39 @@
 
   <body>
     <!-- header -->
-    <header class="w-full border-b border-white/10 backdrop-blur-sm">
-      <div class="container flex items-center justify-between py-6">
-        <div class="flex font-space items-center gap-2">
-          <h4>
-            <span
-              class="rounded-full w-15 h-15 bg-[radial-gradient(circle_at_top,var(--color-starlight),var(--color-cosmic-blue))]"
-              >🚀</span
-            >
+    <header class="py-8 fixed shadow-md w-full z-50 bg-deep-space">
+      <div class="container">
+        <!-- wrapper -->
+        <div class="flex justify-between items-center">
+          <!-- logo -->
+          <h4 class="logo">
+            <span class="logo-icon">🚀</span>
             COSMOS
           </h4>
+          <!-- nav -->
+          <nav class="headerNav">
+            <ul>
+              <li><a href="./home.html">Home</a></li>
+              <li><a href="./missions.html">Missions</a></li>
+              <li><a href="./spacecraft.html">Spacecraft</a></li>
+              <li><a href="./gallery.html">Gallery</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <!-- toggle menu -->
+          <div class="toggleMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <!-- transparent -->
+          <div class="transparent"></div>
         </div>
-
-        <nav class="headerNav">
-          <ul>
-            <li><a href="./home.html">Home</a></li>
-            <li><a href="./missions.html">Missions</a></li>
-            <li><a href="./spacecraft.html">Spacecraft</a></li>
-            <li><a href="./gallery.html">Gallery</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="toggleMenu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="transparent"></div>
       </div>
     </header>
 
     <!-- HERO -->
-    <section class="hero-section">
+    <section class="hero-section pt-40">
       <div class="container relative text-center max-w-4xl">
         <div class="hero-badge">🌌 Exploring the Unknown</div>
 
@@ -61,9 +63,9 @@
         </p>
 
         <div class="flex flex-col sm:flex-row justify-center gap-5 mt-10">
-          <a class="btn-primary"> View Missions → </a>
+          <a class="btn btn-primary"> View Missions → </a>
 
-          <a class="btn-outline"> Our Fleet </a>
+          <a class="btn btn-outline"> Our Fleet </a>
         </div>
       </div>
     </section>
@@ -95,8 +97,8 @@
       </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="">
+    <!-- footer -->
+    <footer>
       <div class="border-y border-text-secondary/10 py-8">
         <div class="container">
           <div
