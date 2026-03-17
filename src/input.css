@@ -67,7 +67,7 @@
     @apply scroll-smooth scroll-p-16;
   }
   body {
-    @apply overflow-x-hidden font-inter text-text-primary text-base bg-deep-space;
+    @apply overflow-x-hidden font-inter text-text-primary text-base bg-deep-space bg-fixed;
   }
   .container {
     @apply max-w-7xl w-full mx-auto px-4;
@@ -179,5 +179,8 @@
   }
   .mission-status.upcoming {
     @apply bg-red-500/20 text-red-400;
+  }
+  .parallax-bg {
+    @apply bg-fixed bg-cover bg-center bg-no-repeat;
   }
 }

@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cosmos</title>
+    <link rel="icon" href="../images/favicon.ico" />
     <link rel="stylesheet" href="./output.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
   </head>
+
   <body>
     <!-- header -->
     <header class="py-8 fixed shadow-md w-full z-50 bg-deep-space">
@@ -17,11 +19,8 @@
         <!-- wrapper -->
         <div class="flex justify-between items-center">
           <!-- logo -->
-          <h4>
-            <span
-              class="rounded-full w-15 h-15 bg-[radial-gradient(circle_at_top,var(--color-starlight),var(--color-cosmic-blue))]"
-              >🚀</span
-            >
+          <h4 class="logo">
+            <span class="logo-icon">🚀</span>
             COSMOS
           </h4>
           <!-- nav -->
@@ -46,8 +45,310 @@
       </div>
     </header>
 
+    <!-- hero -->
+    <section
+      class="pt-40 pb-24 min-h-screen parallax-bg relative"
+      style="background-image: url(&quot;/images/bg.png&quot;)"
+    >
+      <div
+        class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/[0.03] via-transparent to-transparent z-0 pointer-events-none"
+      ></div>
+
+      <section class="container text-center mb-28 relative z-10">
+        <h1
+          class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight"
+        >
+          Our Fleet
+        </h1>
+        <p class="text-white/60 text-[17px] max-w-2xl mx-auto leading-relaxed">
+          Advanced spacecraft designed for exploration, research, and pushing
+          the boundaries of human presence in space.
+        </p>
+      </section>
+
+      <!-- card 1 -->
+      <section class="container mb-32 relative z-10">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center"
+        >
+          <div class="flex justify-center order-1 lg:order-1 relative">
+            <div
+              class="absolute w-[120%] h-[120%] bg-[#b5c0d0] blur-[100px] opacity-10 rounded-full -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            ></div>
+
+            <div
+              class="w-64 h-64 bg-[#c8d0da] rounded-[2rem] flex items-center justify-center relative shadow-2xl"
+            >
+              <div
+                class="w-40 h-40 bg-[#354052] rounded-2xl shadow-inner"
+              ></div>
+            </div>
+          </div>
+
+          <div class="order-2 lg:order-2">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-5">
+              Orion Capsule
+            </h2>
+            <p
+              class="text-white/70 mb-8 leading-relaxed text-[15px] md:text-base"
+            >
+              NASA's state-of-the-art crew vehicle designed for deep space
+              exploration. Capable of sustaining astronauts for months during
+              missions to the Moon, Mars, and beyond.
+            </p>
+
+            <div class="grid grid-cols-2 gap-4 mb-8">
+              <!-- card 1 -->
+              <div
+                class="bg-[#121826]/80 border border-white/5 rounded-xl p-4 md:p-5"
+              >
+                <div
+                  class="text-white/40 text-[10px] md:text-[11px] font-bold tracking-widest uppercase mb-1.5"
+                >
+                  Crew Capacity
+                </div>
+                <div class="text-primary text-[17px] font-bold">
+                  4 Astronauts
+                </div>
+              </div>
+
+              <!-- card 2 -->
+              <div
+                class="bg-[#121826]/80 border border-white/5 rounded-xl p-4 md:p-5"
+              >
+                <div
+                  class="text-white/40 text-[10px] md:text-[11px] font-bold tracking-widest uppercase mb-1.5"
+                >
+                  Mission Duration
+                </div>
+                <div class="text-primary text-[17px] font-bold">21 Days</div>
+              </div>
+
+              <!-- card 3 -->
+              <div
+                class="bg-[#121826]/80 border border-white/5 rounded-xl p-4 md:p-5"
+              >
+                <div
+                  class="text-white/40 text-[10px] md:text-[11px] font-bold tracking-widest uppercase mb-1.5"
+                >
+                  Height
+                </div>
+                <div class="text-primary text-[17px] font-bold">3.3 m</div>
+              </div>
+
+              <!-- card 4 -->
+              <div
+                class="bg-[#121826]/80 border border-white/5 rounded-xl p-4 md:p-5"
+              >
+                <div
+                  class="text-white/40 text-[10px] md:text-[11px] font-bold tracking-widest uppercase mb-1.5"
+                >
+                  Diameter
+                </div>
+                <div class="text-primary text-[17px] font-bold">5 m</div>
+              </div>
+            </div>
+
+            <a
+              href="#"
+              class="inline-block bg-primary hover:bg-[#c8d0da] text-white hover:text-black px-8 py-3.5 rounded-full font-bold text-[15px] transition-all duration-300"
+            >
+              View Specifications
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- card 2 -->
+      <section class="container mb-32 relative z-10">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center"
+        >
+          <div class="order-2 lg:order-1">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-5">
+              Dragon 2
+            </h2>
+            <p
+              class="text-white/70 mb-8 leading-relaxed text-[15px] md:text-base"
+            >
+              SpaceX's reusable crew spacecraft revolutionizing access to low
+              Earth orbit. First commercial vehicle to carry humans to the ISS.
+            </p>
+
+            <div class="grid grid-cols-2 gap-4 mb-8">
+              <!-- card 1 -->
+              <div
+                class="bg-[#121826]/80 border border-white/5 rounded-xl p-4 md:p-5"
+              >
+                <div
+                  class="text-white/40 text-[10px] md:text-[11px] font-bold tracking-widest uppercase mb-1.5"
+                >
+                  Crew Capacity
+                </div>
+                <div class="text-primary text-[17px] font-bold">
+                  7 Astronauts
+                </div>
+              </div>
+
+              <!-- card 2 -->
+              <div
+                class="bg-[#121826]/80 border border-white/5 rounded-xl p-4 md:p-5"
+              >
+                <div
+                  class="text-white/40 text-[10px] md:text-[11px] font-bold tracking-widest uppercase mb-1.5"
+                >
+                  Reusability
+                </div>
+                <div class="text-primary text-[17px] font-bold">
+                  10+ Flights
+                </div>
+              </div>
+
+              <!-- card 3 -->
+              <div
+                class="bg-[#121826]/80 border border-white/5 rounded-xl p-4 md:p-5"
+              >
+                <div
+                  class="text-white/40 text-[10px] md:text-[11px] font-bold tracking-widest uppercase mb-1.5"
+                >
+                  Height
+                </div>
+                <div class="text-primary text-[17px] font-bold">8.1 m</div>
+              </div>
+
+              <!-- card 4 -->
+              <div
+                class="bg-[#121826]/80 border border-white/5 rounded-xl p-4 md:p-5"
+              >
+                <div
+                  class="text-white/40 text-[10px] md:text-[11px] font-bold tracking-widest uppercase mb-1.5"
+                >
+                  Diameter
+                </div>
+                <div class="text-primary text-[17px] font-bold">4 m</div>
+              </div>
+            </div>
+
+            <a
+              href="#"
+              class="inline-block bg-primary hover:bg-[#c8d0da] text-white hover:text-black px-8 py-3.5 rounded-full font-bold text-[15px] transition-all duration-300"
+            >
+              View Specifications
+            </a>
+          </div>
+
+          <div class="flex justify-center order-1 lg:order-2 relative">
+            <div
+              class="absolute w-[120%] h-[120%] bg-[#f59e0b] blur-[100px] opacity-15 rounded-full -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            ></div>
+
+            <div
+              class="w-64 h-64 bg-[#f59e0b] bg-gradient-to-br from-[#fbbf24] to-[#d97706] rounded-[2rem] flex items-center justify-center relative shadow-2xl"
+            >
+              <div
+                class="w-24 h-24 bg-[#fcd34d] rounded-full shadow-inner opacity-90"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- card 3 -->
+      <section class="container relative z-10">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center"
+        >
+          <div class="flex justify-center order-1 lg:order-1 relative">
+            <div
+              class="absolute w-[120%] h-[120%] bg-[#3b82f6] blur-[100px] opacity-15 rounded-full -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            ></div>
+
+            <div
+              class="w-64 h-64 bg-[#3b82f6] bg-gradient-to-br from-[#60a5fa] to-[#2563eb] rounded-[2rem] flex items-center justify-center relative shadow-2xl"
+            >
+              <div
+                class="w-40 h-14 bg-[#93c5fd] rounded-lg shadow-inner opacity-90"
+              ></div>
+            </div>
+          </div>
+
+          <div class="order-2 lg:order-2">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-5">
+              Starship
+            </h2>
+            <p
+              class="text-white/70 mb-8 leading-relaxed text-[15px] md:text-base"
+            >
+              Fully reusable super-heavy launch vehicle designed for Mars
+              colonization. The largest rocket ever built with unprecedented
+              payload capacity.
+            </p>
+
+            <div class="grid grid-cols-2 gap-4 mb-8">
+              <!-- card 1 -->
+              <div
+                class="bg-[#121826]/80 border border-white/5 rounded-xl p-4 md:p-5"
+              >
+                <div
+                  class="text-white/40 text-[10px] md:text-[11px] font-bold tracking-widest uppercase mb-1.5"
+                >
+                  Payload to LEO
+                </div>
+                <div class="text-primary text-[17px] font-bold">100-150 t</div>
+              </div>
+
+              <!-- card 2 -->
+              <div
+                class="bg-[#121826]/80 border border-white/5 rounded-xl p-4 md:p-5"
+              >
+                <div
+                  class="text-white/40 text-[10px] md:text-[11px] font-bold tracking-widest uppercase mb-1.5"
+                >
+                  Height
+                </div>
+                <div class="text-primary text-[17px] font-bold">121 m</div>
+              </div>
+
+              <!-- card 3 -->
+              <div
+                class="bg-[#121826]/80 border border-white/5 rounded-xl p-4 md:p-5"
+              >
+                <div
+                  class="text-white/40 text-[10px] md:text-[11px] font-bold tracking-widest uppercase mb-1.5"
+                >
+                  Thrust
+                </div>
+                <div class="text-primary text-[17px] font-bold">7,590 t</div>
+              </div>
+
+              <!-- card 4 -->
+              <div
+                class="bg-[#121826]/80 border border-white/5 rounded-xl p-4 md:p-5"
+              >
+                <div
+                  class="text-white/40 text-[10px] md:text-[11px] font-bold tracking-widest uppercase mb-1.5"
+                >
+                  Stages
+                </div>
+                <div class="text-primary text-[17px] font-bold">
+                  2 (Reusable)
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="#"
+              class="inline-block bg-primary hover:bg-[#c8d0da] text-white hover:text-black px-8 py-3.5 rounded-full font-bold text-[15px] transition-all duration-300"
+            >
+              View Specifications
+            </a>
+          </div>
+        </div>
+      </section>
+    </section>
+
     <!-- footer -->
-    <footer class="">
+    <footer>
       <div class="border-y border-text-secondary/10 py-8">
         <div class="container">
           <div
@@ -90,8 +391,6 @@
         </p>
       </div>
     </footer>
-
-    <!-- script -->
     <script src="../js/toggle-menu.js"></script>
   </body>
 </html>
