@@ -142,7 +142,7 @@
     @apply border border-white/20 hover:border-white transition;
   }
   .stat-card {
-    @apply bg-[#111118] border border-white/5 rounded-xl p-10 text-center transition hover:border-starlight/40 hover:shadow-[0_0_20px_var(--color-glow)];
+    @apply bg-[#111118] border border-white/5 rounded-xl p-10 text-center transition hover:border-starlight/40 hover:shadow-[0_0_20px_var(--color-glow)] w-70;
   }
   .stat-card h3 {
     @apply text-starlight;
@@ -153,14 +153,18 @@
   .social-icon {
     @apply w-10 h-10 flex items-center justify-center rounded-full border border-white/10 text-text-secondary hover:border-starlight transition;
   }
+  /* mission */
   .mission-card {
-    @apply bg-[#121826] rounded-2xl overflow-hidden shadow-md  cursor-pointer hover:scale-[1.02] transition;
+    @apply bg-nebula-purple rounded-2xl overflow-hidden shadow-md  cursor-pointer hover:scale-[1.02] transition;
   }
   .mission-img {
     @apply w-full h-56 object-cover;
   }
   .mission-body {
     @apply p-6;
+  }
+  .mission-body h5 {
+    @apply text-starlight mb-2;
   }
   .mission-launch {
     @apply text-text-secondary text-sm mb-2;
