@@ -419,6 +419,9 @@
   .w-120 {
     width: calc(var(--spacing) * 120);
   }
+  .w-300 {
+    width: calc(var(--spacing) * 300);
+  }
   .w-\[75\%\] {
     width: 75%;
   }
@@ -1702,14 +1705,14 @@
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
-  .mission-status.active {
+  .mission-card:nth-child(n + 1):nth-child(-n + 3) .mission-status {
     background-color: color-mix(in srgb, oklch(72.3% 0.219 149.579) 20%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-green-500) 20%, transparent);
     }
     color: var(--color-green-400);
   }
-  .mission-status.upcoming {
+  .mission-card:nth-child(n + 4) .mission-status {
     background-color: color-mix(in srgb, oklch(63.7% 0.237 25.331) 20%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-red-500) 20%, transparent);

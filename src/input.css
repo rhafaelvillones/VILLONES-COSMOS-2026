@@ -178,10 +178,10 @@
   .mission-status {
     @apply absolute top-4 right-4 text-xs px-3 py-1 rounded-full;
   }
-  .mission-status.active {
+  .mission-card:nth-child(n + 1):nth-child(-n + 3) .mission-status {
     @apply bg-green-500/20 text-green-400;
   }
-  .mission-status.upcoming {
+  .mission-card:nth-child(n + 4) .mission-status {
     @apply bg-red-500/20 text-red-400;
   }
   .parallax-bg {
