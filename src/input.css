@@ -93,6 +93,18 @@
 }
 
 @layer components {
+  .headerNav ul li a {
+    @apply inline-block text-text-secondary pb-1 border-b-2 border-transparent duration-200;
+  }
+  .headerNav ul li a.active {
+    @apply text-starlight border-b-0 md:text-text-primary md:border-b-2 md:border-starlight;
+  }
+  .footerNav li a {
+    @apply relative pb-1 duration-200;
+  }
+  .footerNav li a.active {
+    @apply text-white border-b-2 border-starlight;
+  }
   .headerNav ul {
     @apply flex flex-col gap-5 fixed w-full top-26 text-left items-start overflow-hidden right-0 h-0 opacity-0 duration-300 md:opacity-100 md:flex-row md:items-center md:top-auto md:h-auto md:static md:shadow-none;
   }
@@ -118,13 +130,22 @@
     @apply hidden;
   }
   .transparent.open {
-    @apply block fixed h-screen w-full backdrop-blur-sm left-0 top-75 duration-300 overflow-y-hidden;
+    @apply block fixed h-screen w-full backdrop-blur-sm left-0 top-81 duration-300 overflow-y-hidden;
   }
   .logo {
     @apply flex items-center gap-2 font-space;
   }
   .logo-icon {
     @apply flex items-center justify-center rounded-full w-10 h-10 bg-[radial-gradient(circle_at_top,var(--color-starlight),var(--color-cosmic-blue))];
+  }
+  .title-font {
+    @apply font-space;
+  }
+  .title h2 {
+    @apply font-space text-3xl md:text-5xl mb-4 text-text-primary;
+  }
+  .title p {
+    @apply text-text-secondary mx-auto leading-relaxed;
   }
   .hero-section {
     @apply relative overflow-hidden py-28 bg-[radial-gradient(circle_at_top,var(--color-cosmic-blue),var(--color-deep-space))];
@@ -142,7 +163,7 @@
     @apply border border-white/20 hover:border-white transition;
   }
   .stat-card {
-    @apply bg-[#111118] border border-white/5 rounded-xl p-10 text-center transition hover:border-starlight/40 hover:shadow-[0_0_20px_var(--color-glow)] w-70;
+    @apply bg-[#111118] border border-white/5 rounded-xl p-10 text-center transition hover:border-starlight/40 hover:shadow-[0_0_20px_var(--color-glow)] md:w-60;
   }
   .stat-card h3 {
     @apply text-starlight;
@@ -164,10 +185,10 @@
     @apply p-6;
   }
   .mission-body h5 {
-    @apply text-starlight mb-2;
+    @apply mb-2;
   }
   .mission-launch {
-    @apply text-text-secondary text-sm mb-2;
+    @apply text-starlight  text-sm mb-2;
   }
   .mission-desc {
     @apply text-text-secondary/80 text-sm leading-relaxed mb-5;
@@ -178,13 +199,61 @@
   .mission-status {
     @apply absolute top-4 right-4 text-xs px-3 py-1 rounded-full;
   }
-  .mission-card:nth-child(n + 1):nth-child(-n + 3) .mission-status {
-    @apply bg-green-500/20 text-green-400;
+  /* .mission-card:nth-child(n + 1):nth-child(-n + 3) .mission-status {
+    @apply border-green-500 bg-green-300/20 text-green-700;
   }
   .mission-card:nth-child(n + 4) .mission-status {
-    @apply bg-red-500/20 text-red-400;
-  }
+    @apply border-starlight bg-starlight/30 text-starlight;
+  } */
   .parallax-bg {
     @apply bg-fixed bg-cover bg-center bg-no-repeat;
+  }
+  /* spacecraft */
+  .spacecraft-card {
+    @apply mb-32 relative z-10 md:w-300 mx-auto;
+  }
+  .spacecraft-wrapper {
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center;
+  }
+  .spacecraft-image {
+    @apply flex justify-center order-1 lg:order-1 relative;
+  }
+  .spacecraft-card:nth-child(even) .spacecraft-wrapper .spacecraft-image {
+    @apply lg:order-2;
+  }
+  .spacecraft-data {
+    @apply order-2 lg:order-2 md:w-140;
+  }
+  .spacecraft-card:nth-child(even) .spacecraft-wrapper .spacecraft-data {
+    @apply lg:order-1;
+  }
+  .spacecraft-data h3 {
+    @apply text-4xl font-space text-text-primary mb-5;
+  }
+  .spacecraft-data p {
+    @apply text-text-primary mb-8 leading-relaxed text-[15px] md:text-base;
+  }
+  .spacecraft-stats {
+    @apply grid grid-cols-2 gap-4 mb-8;
+  }
+  .spacecraft-subcard {
+    @apply bg-[#171c2d]/80 border border-white/5 rounded-xl p-4 md:p-5;
+  }
+  .spacecraft-subcard p {
+    @apply text-text-secondary text-[10px] md:text-[11px] font-bold tracking-widest uppercase mb-1.5;
+  }
+  .spacecraft-subcard h5 {
+    @apply text-[17px] font-space font-bold text-starlight;
+  }
+  /* gallery */
+  .gallery-image {
+    @apply w-full h-full object-cover hover:scale-105 transition-transform duration-700;
+  }
+  .gallery-image-container {
+    @apply rounded-xl overflow-hidden cursor-pointer border border-white/5 shadow-lg;
+  }
+  /* single mission */
+  .single-mission-title {
+    @apply text-2xl md:text-3xl font-space text-white mb-2 pb-4 border-b-2 border-starlight/30 w-max;
   }
 }

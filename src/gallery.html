@@ -19,7 +19,7 @@
         <!-- wrapper -->
         <div class="flex justify-between items-center">
           <!-- logo -->
-          <h4 class="logo">
+          <h4 class="logo text-3xl">
             <span class="logo-icon">🚀</span>
             COSMOS
           </h4>
@@ -51,79 +51,76 @@
       style="background-image: url(&quot;/images/bg.png&quot;)"
     >
       <div class="container relative z-10">
-        <div class="text-center mb-16 px-4">
-          <h1
-            class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight"
-          >
-            Cosmic Gallery
-          </h1>
-          <p
-            class="text-white/60 text-[15px] md:text-base max-w-2xl mx-auto leading-relaxed"
-          >
+        <div class="title text-center mb-16 px-4">
+          <h2>Cosmic Gallery</h2>
+          <p class="md:w-140 w-90">
             Breathtaking images from across the universe captured by our
             missions and observatories.
           </p>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6">
+        <div class="grid grid-cols-1">
           <div
-            class="md:col-span-2 md:row-span-2 h-[300px] md:h-[504px] rounded-xl overflow-hidden group cursor-pointer border border-white/5 shadow-lg"
+            class="md:w-300 mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6"
           >
-            <img
-              src="../images/9.jfif"
-              alt="Nebula Cloud"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-            />
-          </div>
+            <div
+              class="md:col-span-2 md:row-span-2 h-75 md:h-126 gallery-image-container"
+            >
+              <img
+                src="../images/9.jfif"
+                alt="Nebula Cloud"
+                class="gallery-image"
+              />
+            </div>
 
-          <div
-            class="md:col-span-1 md:row-span-1 h-[300px] md:h-[240px] rounded-xl overflow-hidden group cursor-pointer border border-white/5 shadow-lg"
-          >
-            <img
-              src="../images/8.jpg"
-              alt="Space Station Cupola"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-            />
-          </div>
+            <div
+              class="md:col-span-1 md:row-span-1 h-75 md:h-60 gallery-image-container"
+            >
+              <img
+                src="../images/8.jpg"
+                alt="Space Station Cupola"
+                class="gallery-image"
+              />
+            </div>
 
-          <div
-            class="md:col-span-1 md:row-span-1 h-[300px] md:h-[240px] rounded-xl overflow-hidden group cursor-pointer border border-white/5 shadow-lg"
-          >
-            <img
-              src="../images/7.jpg"
-              alt="Abstract Mars Texture"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-            />
-          </div>
+            <div
+              class="md:col-span-1 md:row-span-1 h-75 md:h-60 gallery-image-container"
+            >
+              <img
+                src="../images/7.jpg"
+                alt="Abstract Mars Texture"
+                class="gallery-image"
+              />
+            </div>
 
-          <div
-            class="md:col-span-2 md:row-span-1 h-[300px] md:h-[240px] rounded-xl overflow-hidden group cursor-pointer border border-white/5 shadow-lg"
-          >
-            <img
-              src="../images/9.jfif"
-              alt="Wide Nebula View"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-            />
-          </div>
+            <div
+              class="md:col-span-2 md:row-span-1 h-75 md:h-60 gallery-image-container"
+            >
+              <img
+                src="../images/9.jfif"
+                alt="Wide Nebula View"
+                class="gallery-image"
+              />
+            </div>
 
-          <div
-            class="md:col-span-1 md:row-span-2 h-[300px] md:h-[504px] rounded-xl overflow-hidden group cursor-pointer border border-white/5 shadow-lg"
-          >
-            <img
-              src="../images/10.jfif"
-              alt="Milky Way Galaxy"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-            />
-          </div>
+            <div
+              class="md:col-span-1 md:row-span-2 h-75 md:h-126 gallery-image-container"
+            >
+              <img
+                src="../images/10.jfif"
+                alt="Milky Way Galaxy"
+                class="gallery-image"
+              />
+            </div>
 
-          <div
-            class="md:col-span-1 md:row-span-1 h-[300px] md:h-[240px] rounded-xl overflow-hidden group cursor-pointer border border-white/5 shadow-lg"
-          >
-            <img
-              src="../images/11.jfif"
-              alt="Starfield"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-            />
+            <div
+              class="md:col-span-1 md:row-span-1 h-75 md:h-60 gallery-image-container"
+            >
+              <img
+                src="../images/11.jfif"
+                alt="Starfield"
+                class="gallery-image"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -136,10 +133,10 @@
           <div
             class="flex flex-col md:flex-row items-center justify-between gap-8"
           >
-            <div class="font-space"><h4>🚀 COSMOS</h4></div>
+            <div class="font-space text-3xl"><h4>🚀 COSMOS</h4></div>
 
             <div>
-              <ul class="flex gap-8 text-text-secondary">
+              <ul class="footerNav flex gap-8 text-text-secondary">
                 <li><a href="./home.html">Home</a></li>
                 <li><a href="./missions.html">Missions</a></li>
                 <li><a href="./spacecraft.html">Spacecraft</a></li>
@@ -174,5 +171,6 @@
       </div>
     </footer>
     <script src="../js/toggle-menu.js"></script>
+    <script src="../js/active-state.js"></script>
   </body>
 </html>

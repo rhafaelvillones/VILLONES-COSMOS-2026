@@ -19,12 +19,14 @@
     <!-- header -->
     <header class="py-8 fixed shadow-md w-full z-50 bg-deep-space">
       <div class="container">
+        <!-- wrapper -->
         <div class="flex justify-between items-center">
-          <h4 class="logo">
+          <!-- logo -->
+          <h4 class="logo text-3xl">
             <span class="logo-icon">🚀</span>
             COSMOS
           </h4>
-
+          <!-- nav -->
           <nav class="headerNav">
             <ul>
               <li><a href="./home.html">Home</a></li>
@@ -34,179 +36,105 @@
               <li><a href="./contact.html">Contact</a></li>
             </ul>
           </nav>
-
+          <!-- toggle menu -->
           <div class="toggleMenu">
             <span></span>
             <span></span>
             <span></span>
           </div>
-
+          <!-- transparent -->
           <div class="transparent"></div>
         </div>
       </div>
     </header>
 
-    <!-- HERO -->
-    <section class="hero-section bg-[#0b0f1a]">
-      <div class="hero-bg">
-        <img src="../images/1.jpg" class="hero-img" />
-        <div class="hero-overlay"></div>
-      </div>
-
+    <!-- hero -->
+    <section
+      class="pt-40 pb-24 min-h-screen parallax-bg"
+      style="background-image: url(&quot;/images/bg.png&quot;)"
+    >
       <div class="container relative z-10">
-        <p class="text-white/60 text-sm mb-6">
-          Home → Missions → Perseverance Rover
-        </p>
+        <div class="title text-center mb-16 px-4">
+          <h2>Cosmic Gallery</h2>
+          <p class="md:w-140 w-90">
+            Breathtaking images from across the universe captured by our
+            missions and observatories.
+          </p>
+        </div>
 
-        <div class="flex items-center gap-4 mb-6 flex-wrap">
-          <span
-            class="px-3 py-1.5 rounded-full bg-[#113a29]/80 text-[#22c55e] border border-[#22c55e]/30 text-xs font-bold tracking-wide flex items-center gap-2"
+        <div class="gallery-grid">
+          <div class="gallery-item item-1">
+            <img src="../images/9.jfif" alt="" />
+          </div>
+
+          <div class="gallery-item item-2">
+            <img src="../images/8.jpg" alt="" />
+          </div>
+
+          <div class="gallery-item item-3">
+            <img src="../images/7.jpg" alt="" />
+          </div>
+
+          <div class="gallery-item item-4">
+            <img src="../images/9.jfif" alt="" />
+          </div>
+
+          <div class="gallery-item item-5">
+            <img src="../images/10.jfif" alt="" />
+          </div>
+
+          <div class="gallery-item item-6">
+            <img src="../images/11.jfif" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="border-y border-text-secondary/10 py-8">
+        <div class="container">
+          <div
+            class="flex flex-col md:flex-row items-center justify-between gap-8"
           >
-            <span class="w-1.5 h-1.5 rounded-full bg-[#22c55e]"></span>
-            ACTIVE MISSION
-          </span>
+            <div class="font-space text-3xl"><h4>🚀 COSMOS</h4></div>
 
-          <span class="text-white/60 text-sm flex items-center gap-2">
-            📅 Launched: July 30, 2020
-          </span>
+            <div>
+              <ul class="footerNav flex gap-8 text-text-secondary">
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./missions.html">Missions</a></li>
+                <li><a href="./spacecraft.html">Spacecraft</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+              </ul>
+            </div>
+
+            <div class="flex gap-4">
+              <a class="social-icon">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+
+              <a class="social-icon">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+
+              <a class="social-icon">
+                <i class="fa-solid fa-camera"></i>
+              </a>
+
+              <a class="social-icon">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </div>
         </div>
-
-        <h1 class="hero-title">Perseverance Rover</h1>
-
-        <p class="hero-desc">
-          Exploring Mars' Jezero Crater to seek signs of ancient life and
-          collect samples for future return to Earth. The most sophisticated
-          rover ever sent to the Red Planet.
+      </div>
+      <div class="container">
+        <p class="text-center text-text-secondary text-sm my-12">
+          © 2026 Cosmos Space Exploration. All rights reserved.
         </p>
       </div>
-    </section>
-
-    <!-- MAIN CONTENT -->
-    <section class="bg-[#0b0f1a] py-28 text-white relative">
-      <div class="section-bg">
-        <img src="../images/bg.png" />
-      </div>
-
-      <div class="container relative z-10">
-        <div class="grid lg:grid-cols-12 gap-12">
-          <!-- LEFT CONTENT -->
-          <div class="lg:col-span-8 space-y-16">
-            <p class="text-white/70 leading-relaxed">
-              The Mars 2020 Perseverance rover mission is part of NASA's Mars
-              Exploration Program, a long-term effort of robotic exploration of
-              the Red Planet.
-            </p>
-
-            <!-- OBJECTIVES -->
-            <div>
-              <h2 class="text-3xl font-bold mb-6">Mission Objectives</h2>
-
-              <ul class="list-disc pl-5 space-y-4 text-white/70">
-                <li>Explore geologically diverse landing site</li>
-                <li>Assess ancient habitability</li>
-                <li>Seek signs of ancient life</li>
-                <li>Collect rock samples for future return</li>
-                <li>Demonstrate technology for future exploration</li>
-              </ul>
-            </div>
-
-            <!-- GALLERY -->
-            <div class="grid md:grid-cols-2 gap-4">
-              <img src="../images/1.jpg" class="gallery-img" />
-              <img src="../images/7.jpg" class="gallery-img" />
-              <img src="../images/5.jpg" class="gallery-img" />
-              <img src="../images/8.jpg" class="gallery-img" />
-            </div>
-          </div>
-
-          <!-- SIDEBAR -->
-          <div class="lg:col-span-4 space-y-6">
-            <!-- Mission Data -->
-            <div class="sidebar-card">
-              <h3 class="text-lg font-bold mb-8">Mission Data</h3>
-
-              <div class="space-y-6 text-sm">
-                <div>
-                  <div class="flex justify-between mb-2">
-                    <span class="text-white/60">Distance Traveled</span>
-                    <span class="font-bold">28.5 km</span>
-                  </div>
-
-                  <div class="progress-bar">
-                    <div class="progress-fill w-[75%]"></div>
-                  </div>
-                </div>
-
-                <div>
-                  <div class="flex justify-between mb-2">
-                    <span class="text-white/60">Samples Collected</span>
-                    <span class="font-bold">23 / 30</span>
-                  </div>
-
-                  <div class="progress-bar">
-                    <div class="progress-fill w-[75%]"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Quick Links -->
-            <div class="sidebar-card">
-              <h3 class="text-lg font-bold mb-6">Quick Links</h3>
-
-              <ul class="space-y-4 text-white/70">
-                <li>📡 Live Mission Control</li>
-                <li>📷 Raw Image Gallery</li>
-                <li>📍 Interactive Map</li>
-                <li>📄 Scientific Papers</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- RELATED MISSIONS -->
-    <section class="bg-[#0b0f1a] pt-12 pb-24 border-t border-white/5">
-      <div class="container">
-        <h2 class="text-4xl font-bold text-center mb-12">Related Missions</h2>
-
-        <div class="grid md:grid-cols-3 gap-6">
-          <div class="mission-card group">
-            <img src="../images/8.jpg" class="mission-img" />
-
-            <div class="mission-body">
-              <h4 class="mission-title">International Space Station</h4>
-
-              <p class="mission-desc">
-                Continuous human presence in low Earth orbit.
-              </p>
-            </div>
-          </div>
-
-          <div class="mission-card group">
-            <img src="../images/3.jpg" class="mission-img" />
-
-            <div class="mission-body">
-              <h4 class="mission-title">James Webb Telescope</h4>
-
-              <p class="mission-desc">Observing the early universe.</p>
-            </div>
-          </div>
-
-          <div class="mission-card group">
-            <img src="../images/8.jpg" class="mission-img" />
-
-            <div class="mission-body">
-              <h4 class="mission-title">Artemis Program</h4>
-
-              <p class="mission-desc">Returning humans to the Moon.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    </footer>
     <script src="../js/toggle-menu.js"></script>
+    <script src="../js/active-state.js"></script>
   </body>
 </html>

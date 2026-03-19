@@ -19,7 +19,7 @@
         <!-- wrapper -->
         <div class="flex justify-between items-center">
           <!-- logo -->
-          <h4 class="logo">
+          <h4 class="logo text-3xl">
             <span class="logo-icon">🚀</span>
             COSMOS
           </h4>
@@ -47,7 +47,7 @@
 
     <!-- hero -->
     <section
-      class="relative pt-36 pb-36 bg-[#0b0f1a] text-white overflow-hidden lg:pt-80"
+      class="relative pt-36 pb-10 bg-[#0b0f1a] text-white overflow-hidden lg:pt-80"
     >
       <div class="absolute inset-0">
         <img
@@ -83,7 +83,7 @@
           Perseverance Rover
         </h1>
 
-        <p class="text-white/70 max-w-2xl text-lg leading-relaxed">
+        <p class="text-text-secondary md:w-155 text-lg leading-relaxed">
           Exploring Mars' Jezero Crater to seek signs of ancient life and
           collect samples for future return to Earth. The most sophisticated
           rover ever sent to the Red Planet.
@@ -91,20 +91,15 @@
       </div>
     </section>
 
-    <section class="bg-[#0b0f1a] pb-24 text-white">
-      <div class="absolute">
-        <img
-          src="../images/bg.png"
-          alt="Mars"
-          class="w-full h-[100vh] object-cover opacity-80"
-        />
+    <!-- main -->
+    <section
+      class="min-h-screen parallax-bg"
+      style="background-image: url(&quot;/images/bg.png&quot;)"
+    >
+      <div class="container relative z-10 grid grid-cols-1">
         <div
-          class="absolute inset-0 bg-gradient-to-b from-transparent via-[#0b0f1a]/50 to-[#0b0f1a]"
-        ></div>
-      </div>
-
-      <div class="container relative z-10">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+          class="md:w-300 mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 pb-24"
+        >
           <div class="lg:col-span-8 space-y-16">
             <div
               class="pt-20 space-y-6 text-white/70 leading-relaxed text-[15px] md:text-base"
@@ -125,11 +120,10 @@
               </p>
             </div>
 
+            <!-- mission objectives -->
             <div>
-              <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">
-                Mission Objectives
-              </h2>
-              <div class="w-55 h-[2px] opacity-30 bg-primary mb-6"></div>
+              <h2 class="single-mission-title">Mission Objectives</h2>
+              <div class="w-55 h-.5 opacity-30 bg-primary mb-6"></div>
               <ul
                 class="list-disc pl-5 space-y-4 text-white/70 marker:text-white/40"
               >
@@ -149,12 +143,10 @@
                 </li>
               </ul>
             </div>
-
+            <!-- key achievements -->
             <div>
-              <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">
-                Key Achievements
-              </h2>
-              <div class="w-55 opacity-30 h-[2px] bg-primary mb-6"></div>
+              <h2 class="single-mission-title">Key Achievements</h2>
+              <div class="w-55 opacity-30 h-.5 bg-primary mb-6"></div>
               <p class="text-white/70 leading-relaxed mb-8">
                 Since landing in Jezero Crater on February 18, 2021,
                 Perseverance has traveled over 15 kilometers and collected 23
@@ -187,12 +179,10 @@
                 />
               </div>
             </div>
-
+            <!-- technical specifications -->
             <div>
-              <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">
-                Technical Specifications
-              </h2>
-              <div class="w-70 opacity-30 h-[2px] bg-primary mb-6"></div>
+              <h2 class="single-mission-title">Technical Specifications</h2>
+              <div class="w-70 opacity-30 h-.5 bg-primary mb-6"></div>
 
               <div
                 class="bg-[#121826] rounded-xl overflow-hidden border border-white/5"
@@ -241,26 +231,24 @@
                 </div>
               </div>
             </div>
-
-            <blockquote class="border-l-[3px] border-primary pl-5 py-2 my-10">
+            <!-- mission quotes -->
+            <div class="border-l-[3px] border-starlight pl-5 py-2 my-10">
               <p
                 class="italic text-[17px] md:text-lg text-white/90 mb-4 leading-relaxed"
               >
                 "This landing is one of those pivotal moments for NASA, the
-                United States, and space exploration globally – when we know we
+                United States, and space exploration globally - when we know we
                 are on the cusp of discovery and sharpening our pencils, so to
                 speak, to rewrite the textbooks."
               </p>
-              <footer class="font-bold text-white">
+              <h5 class="font-bold text-white">
                 — Steve Jurczyk, former NASA Acting Administrator
-              </footer>
-            </blockquote>
-
+              </h5>
+            </div>
+            <!-- current status -->
             <div>
-              <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">
-                Current Status
-              </h2>
-              <div class="w-50 h-[2px] bg-primary mb-6 opacity-30"></div>
+              <h2 class="single-mission-title">Current Status</h2>
+              <div class="w-50 h-.5 bg-primary mb-6 opacity-30"></div>
               <p class="text-white/70 leading-relaxed mb-8">
                 As of March 2024, Perseverance continues its exploration of
                 Jezero Crater, having completed its primary mission and now in
@@ -299,71 +287,69 @@
           </div>
 
           <div class="lg:col-span-4 space-y-6">
+            <!-- mission data -->
             <div
               class="bg-[#121826] rounded-2xl p-6 shadow-xl border border-white/5 md:mt-20"
             >
               <div class="flex items-center gap-3 mb-8">
-                <div class="p-1.5 bg-white/5 rounded-lg text-lg">📊</div>
+                <div class="p-1.5 bg-starlight/30 rounded-lg text-lg">📊</div>
                 <h3 class="text-lg font-bold text-white">Mission Data</h3>
               </div>
 
               <div class="space-y-6 text-sm">
+                <div
+                  class="flex justify-between items-center border-b border-white/5 pb-4"
+                >
+                  <span class="text-white/60">Distance Traveled</span>
+                  <span class="font-bold text-white text-[15px]">28.5 km</span>
+                </div>
                 <div>
-                  <div class="flex justify-between items-center mb-2">
-                    <span class="text-white/60">Distance Traveled</span>
-                    <span class="font-bold text-white text-[15px]"
-                      >28.5 km</span
-                    >
-                  </div>
                   <div class="h-2 bg-white/10 rounded-full overflow-hidden">
                     <div
-                      class="h-full w-[75%] bg-gradient-to-r from-starlight to-accent-cyan"
+                      class="h-full w-[75%] bg-linear-to-r from-starlight to-accent-cyan"
                     ></div>
                   </div>
-                </div>
-
-                <div>
-                  <div class="flex justify-between items-center mb-2">
+                  <div
+                    class="flex justify-between items-center border-b border-white/5 py-4"
+                  >
                     <span class="text-white/60">Samples Collected</span>
                     <span class="font-bold text-white text-[15px]"
                       >23 / 30</span
                     >
                   </div>
+                </div>
+                <div>
                   <div class="h-2 bg-white/10 rounded-full overflow-hidden">
                     <div
-                      class="h-full w-[75%] bg-gradient-to-r from-starlight to-accent-cyan"
+                      class="h-full w-[75%] bg-linear-to-r from-starlight to-accent-cyan"
                     ></div>
                   </div>
+                  <div
+                    class="flex justify-between items-center border-b border-white/5 py-4"
+                  >
+                    <span class="text-white/60">Sol (Mars Day)</span>
+                    <span class="font-bold text-white text-[15px]">1,089</span>
+                  </div>
                 </div>
-
                 <div
-                  class="flex justify-between items-center border-t border-white/5 pt-5 mt-2"
-                >
-                  <span class="text-white/60">Sol (Mars Day)</span>
-                  <span class="font-bold text-white text-[15px]">1,089</span>
-                </div>
-
-                <div
-                  class="flex justify-between items-center border-t border-white/5 pt-4"
+                  class="flex justify-between items-center border-b border-white/5 pb-4"
                 >
                   <span class="text-white/60">Temperature</span>
                   <span class="font-bold text-white text-[15px]">-63°C</span>
                 </div>
-
-                <div
-                  class="flex justify-between items-center border-t border-white/5 pt-4"
-                >
+                <div class="flex justify-between items-center pb-4">
                   <span class="text-white/60">Wind Speed</span>
                   <span class="font-bold text-white text-[15px]">22 km/h</span>
                 </div>
               </div>
             </div>
 
+            <!-- quick links -->
             <div
               class="bg-[#121826] rounded-2xl p-6 shadow-xl border border-white/5"
             >
               <div class="flex items-center gap-3 mb-6">
-                <div class="p-1.5 bg-white/5 rounded-lg text-lg">🔗</div>
+                <div class="p-1.5 bg-starlight/30 rounded-lg text-lg">🔗</div>
                 <h3 class="text-lg font-bold text-white">Quick Links</h3>
               </div>
 
@@ -412,11 +398,12 @@
               </ul>
             </div>
 
+            <!-- share mission -->
             <div
               class="bg-[#121826] rounded-2xl p-6 shadow-xl border border-white/5"
             >
               <div class="flex items-center gap-3 mb-6">
-                <div class="p-1.5 bg-white/5 rounded-lg text-lg">📤</div>
+                <div class="p-1.5 bg-starlight/30 rounded-lg text-lg">📤</div>
                 <h3 class="text-lg font-bold text-white">Share Mission</h3>
               </div>
               <div class="flex gap-3">
@@ -445,80 +432,85 @@
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- related missions -->
-    <section class="bg-[#0b0f1a] pt-12 pb-24 border-t border-white/5">
-      <div class="container relative z-10">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-4xl font-bold text-white mb-3">
-            Related Missions
-          </h2>
-          <p class="text-white/60">
-            Explore other active missions in our solar system
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <!-- card 1 -->
-          <div
-            class="bg-[#121826] rounded-2xl overflow-hidden shadow-lg border border-white/5 group cursor-pointer flex flex-col"
-          >
-            <div class="h-48 overflow-hidden">
-              <img
-                src="../images/8.jpg"
-                alt="International Space Station"
-                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-              />
-            </div>
-            <div class="p-6 flex-1">
-              <h4 class="text-lg font-bold text-white mb-2">
-                International Space Station
-              </h4>
-              <p class="text-white/60 text-sm leading-relaxed">
-                Continuous human presence in low Earth orbit for over 23 years.
-              </p>
-            </div>
+      <!-- related missions -->
+      <div
+        class="bg-[#0b0f1a] bg-opacity-5 pt-12 pb-24 border-t border-white/5"
+      >
+        <div class="container relative z-10">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-3">
+              Related Missions
+            </h2>
+            <p class="text-white/60">
+              Explore other active missions in our solar system
+            </p>
           </div>
 
-          <!-- card 2 -->
-          <div
-            class="bg-[#121826] rounded-2xl overflow-hidden shadow-lg border border-white/5 group cursor-pointer flex flex-col"
-          >
-            <div class="h-48 overflow-hidden">
-              <img
-                src="../images/3.jpg"
-                alt="James Webb Telescope"
-                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-              />
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- card 1 -->
+            <div
+              class="bg-[#121826] rounded-2xl overflow-hidden shadow-lg border border-white/5 group cursor-pointer flex flex-col"
+            >
+              <div class="h-48 overflow-hidden">
+                <img
+                  src="../images/8.jpg"
+                  alt="International Space Station"
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                />
+              </div>
+              <div class="p-6 flex-1">
+                <h4 class="text-lg font-bold text-white mb-2">
+                  International Space Station
+                </h4>
+                <p class="text-white/60 text-sm leading-relaxed">
+                  Continuous human presence in low Earth orbit for over 23
+                  years.
+                </p>
+              </div>
             </div>
-            <div class="p-6 flex-1">
-              <h4 class="text-lg font-bold text-white mb-2">
-                James Webb Telescope
-              </h4>
-              <p class="text-white/60 text-sm leading-relaxed">
-                Observing the universe in infrared to see the first galaxies.
-              </p>
-            </div>
-          </div>
 
-          <!-- card 3 -->
-          <div
-            class="bg-[#121826] rounded-2xl overflow-hidden shadow-lg border border-white/5 group cursor-pointer flex flex-col"
-          >
-            <div class="h-48 overflow-hidden">
-              <img
-                src="../images/8.jpg"
-                alt="Artemis Program"
-                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-              />
+            <!-- card 2 -->
+            <div
+              class="bg-[#121826] rounded-2xl overflow-hidden shadow-lg border border-white/5 group cursor-pointer flex flex-col"
+            >
+              <div class="h-48 overflow-hidden">
+                <img
+                  src="../images/3.jpg"
+                  alt="James Webb Telescope"
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                />
+              </div>
+              <div class="p-6 flex-1">
+                <h4 class="text-lg font-bold text-white mb-2">
+                  James Webb Telescope
+                </h4>
+                <p class="text-white/60 text-sm leading-relaxed">
+                  Observing the universe in infrared to see the first galaxies.
+                </p>
+              </div>
             </div>
-            <div class="p-6 flex-1">
-              <h4 class="text-lg font-bold text-white mb-2">Artemis Program</h4>
-              <p class="text-white/60 text-sm leading-relaxed">
-                Returning humans to the Moon and establishing sustainable
-                presence.
-              </p>
+
+            <!-- card 3 -->
+            <div
+              class="bg-[#121826] rounded-2xl overflow-hidden shadow-lg border border-white/5 group cursor-pointer flex flex-col"
+            >
+              <div class="h-48 overflow-hidden">
+                <img
+                  src="../images/8.jpg"
+                  alt="Artemis Program"
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                />
+              </div>
+              <div class="p-6 flex-1">
+                <h4 class="text-lg font-bold text-white mb-2">
+                  Artemis Program
+                </h4>
+                <p class="text-white/60 text-sm leading-relaxed">
+                  Returning humans to the Moon and establishing sustainable
+                  presence.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -526,16 +518,16 @@
     </section>
 
     <!-- footer -->
-    <footer class="">
+    <footer>
       <div class="border-y border-text-secondary/10 py-8">
         <div class="container">
           <div
             class="flex flex-col md:flex-row items-center justify-between gap-8"
           >
-            <div class="font-space"><h4>🚀 COSMOS</h4></div>
+            <div class="font-space text-3xl"><h4>🚀 COSMOS</h4></div>
 
             <div>
-              <ul class="flex gap-8 text-text-secondary">
+              <ul class="footerNav flex gap-8 text-text-secondary">
                 <li><a href="./home.html">Home</a></li>
                 <li><a href="./missions.html">Missions</a></li>
                 <li><a href="./spacecraft.html">Spacecraft</a></li>
@@ -569,8 +561,7 @@
         </p>
       </div>
     </footer>
-
-    <!-- script -->
     <script src="../js/toggle-menu.js"></script>
+    <script src="../js/active-state.js"></script>
   </body>
 </html>
